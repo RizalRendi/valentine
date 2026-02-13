@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Nares 💖</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Stage 1: Intro -->
+    <div id="intro-screen" class="screen active">
+        <h1>Hi, Nares! 🌸</h1>
+        <p>I have a very important question for you...</p>
+        <p>But first, you have to catch 10 hearts! 💖</p>
+        <button id="start-game-btn">Start Game!</button>
+    </div>
+
+    <!-- Stage 2: Game -->
+    <div id="game-screen" class="screen">
+        <h2>Catch the Hearts!</h2>
+        <p>Score: <span id="score">0</span>/10</p>
+        <div id="game-container"></div>
+    </div>
+
+    <!-- Stage 3: The Question -->
+    <div id="question-screen" class="screen">
+        <h1>Will you be my Valentine? 🥺</h1>
+        <div class="buttons">
+            <button id="yes-btn">YES! 💖</button>
+            <button id="no-btn">No 😢</button>
+        </div>
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzBqajZsZW5hZHdwZWE1NHR0d3ZwZjVjZmx5YmtjOGxld3B1ZHRrOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6Ee25N9KcBPtSrJFVz/giphy.gif" alt="Cute Bear" class="cute-gif">
+    </div>
+
+    <!-- Stage 4: Celebration -->
+    <div id="success-screen" class="screen">
+        <h1>YAY! I love you, Nares! 🥰</h1>
+        <div class="gallery">
+            <!-- Placeholders for photos -->
+            <div class="photo-frame">
+                <img src="images/valentine2.jpeg" alt="Us">
+            </div>
+            <div class="photo-frame">
+                <img src="images/valentine.jpeg" alt="Us">
+            </div>
+        </div>
+        <div class="message-box">
+            <p>Happy Valentine’s Day.
+I just want to take a moment to say that I really appreciate you. Not in a dramatic or over-the-top way, but in a quiet, honest way. I’m grateful for the conversations we’ve had, the moments we shared, and the way we’re slowly getting to know each other as we are.
+I like how you’re honest about what you feel, even when it’s not easy to say. I respect that, and I don’t take it lightly. Getting to know someone like this, with understanding and patience, feels more meaningful to me than rushing things or forcing expectations.
+I’m not here to change you or put you on some unrealistic pedestal. I appreciate you for who you are right now, with your thoughts, your emotions, and even the parts you’re still figuring out. And I hope you know that you don’t have to be anything else around me.
+Today isn’t about big promises or dramatic words. It’s just about appreciation, warmth, and sincerity. So yeah, Happy Valentine’s Day. I hope today brings you good energy, calm moments, and a smile that comes naturally</p>
+        </div>
+        <button onclick="location.reload()">Replay 💖</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
